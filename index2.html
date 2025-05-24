@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Depression Measurement Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="sphere sphere1"></div>
+    <div class="sphere sphere2"></div>
+    <div class="sphere sphere3"></div>
+    <div class="sphere sphere4"></div>
+    <div class="sphere sphere5"></div>
+    <div class="sphere sphere6"></div>
+    <div class="sphere sphere7"></div>
+    <div class="sphere sphere8"></div>
+  </div>
+
+  <main>
+    <section class="container" role="main" aria-labelledby="title">
+      <h1 id="title" tabindex="0">Depression Measurement Tool</h1>
+      <p class="subtitle">Answer the questions honestly to assess your depression level.</p>
+      <form id="depression-form" aria-describedby="result-info">
+        <div class="question" role="group" aria-labelledby="q1-label">
+          <label id="q1-label">1. Little interest or pleasure in doing things?</label>
+          <div class="options">
+            <input type="radio" id="q1-0" name="q1" value="0" required />
+            <label for="q1-0" title="Not at all">Not at all</label>
+            <input type="radio" id="q1-1" name="q1" value="1" />
+            <label for="q1-1" title="Several days">Several days</label>
+            <input type="radio" id="q1-2" name="q1" value="2" />
+            <label for="q1-2" title="More than half the days">More than half the days</label>
+            <input type="radio" id="q1-3" name="q1" value="3" />
+            <label for="q1-3" title="Nearly every day">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q2-label">
+          <label id="q2-label">2. Feeling down, depressed, or hopeless?</label>
+          <div class="options">
+            <input type="radio" id="q2-0" name="q2" value="0" required />
+            <label for="q2-0">Not at all</label>
+            <input type="radio" id="q2-1" name="q2" value="1" />
+            <label for="q2-1">Several days</label>
+            <input type="radio" id="q2-2" name="q2" value="2" />
+            <label for="q2-2">More than half the days</label>
+            <input type="radio" id="q2-3" name="q2" value="3" />
+            <label for="q2-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q3-label">
+          <label id="q3-label">3. Trouble falling or staying asleep, or sleeping too much?</label>
+          <div class="options">
+            <input type="radio" id="q3-0" name="q3" value="0" required />
+            <label for="q3-0">Not at all</label>
+            <input type="radio" id="q3-1" name="q3" value="1" />
+            <label for="q3-1">Several days</label>
+            <input type="radio" id="q3-2" name="q3" value="2" />
+            <label for="q3-2">More than half the days</label>
+            <input type="radio" id="q3-3" name="q3" value="3" />
+            <label for="q3-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q4-label">
+          <label id="q4-label">4. Feeling tired or having little energy?</label>
+          <div class="options">
+            <input type="radio" id="q4-0" name="q4" value="0" required />
+            <label for="q4-0">Not at all</label>
+            <input type="radio" id="q4-1" name="q4" value="1" />
+            <label for="q4-1">Several days</label>
+            <input type="radio" id="q4-2" name="q4" value="2" />
+            <label for="q4-2">More than half the days</label>
+            <input type="radio" id="q4-3" name="q4" value="3" />
+            <label for="q4-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q5-label">
+          <label id="q5-label">5. Poor appetite or overeating?</label>
+          <div class="options">
+            <input type="radio" id="q5-0" name="q5" value="0" required />
+            <label for="q5-0">Not at all</label>
+            <input type="radio" id="q5-1" name="q5" value="1" />
+            <label for="q5-1">Several days</label>
+            <input type="radio" id="q5-2" name="q5" value="2" />
+            <label for="q5-2">More than half the days</label>
+            <input type="radio" id="q5-3" name="q5" value="3" />
+            <label for="q5-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q6-label">
+          <label id="q6-label">6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down?</label>
+          <div class="options">
+            <input type="radio" id="q6-0" name="q6" value="0" required />
+            <label for="q6-0">Not at all</label>
+            <input type="radio" id="q6-1" name="q6" value="1" />
+            <label for="q6-1">Several days</label>
+            <input type="radio" id="q6-2" name="q6" value="2" />
+            <label for="q6-2">More than half the days</label>
+            <input type="radio" id="q6-3" name="q6" value="3" />
+            <label for="q6-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q7-label">
+          <label id="q7-label">7. Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+          <div class="options">
+            <input type="radio" id="q7-0" name="q7" value="0" required />
+            <label for="q7-0">Not at all</label>
+            <input type="radio" id="q7-1" name="q7" value="1" />
+            <label for="q7-1">Several days</label>
+            <input type="radio" id="q7-2" name="q7" value="2" />
+            <label for="q7-2">More than half the days</label>
+            <input type="radio" id="q7-3" name="q7" value="3" />
+            <label for="q7-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q8-label">
+          <label id="q8-label">8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?</label>
+          <div class="options">
+            <input type="radio" id="q8-0" name="q8" value="0" required />
+            <label for="q8-0">Not at all</label>
+            <input type="radio" id="q8-1" name="q8" value="1" />
+            <label for="q8-1">Several days</label>
+            <input type="radio" id="q8-2" name="q8" value="2" />
+            <label for="q8-2">More than half the days</label>
+            <input type="radio" id="q8-3" name="q8" value="3" />
+            <label for="q8-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <div class="question" role="group" aria-labelledby="q9-label">
+          <label id="q9-label">9. Thoughts that you would be better off dead, or thoughts of hurting yourself in some way?</label>
+          <div class="options">
+            <input type="radio" id="q9-0" name="q9" value="0" required />
+            <label for="q9-0">Not at all</label>
+            <input type="radio" id="q9-1" name="q9" value="1" />
+            <label for="q9-1">Several days</label>
+            <input type="radio" id="q9-2" name="q9" value="2" />
+            <label for="q9-2">More than half the days</label>
+            <input type="radio" id="q9-3" name="q9" value="3" />
+            <label for="q9-3">Nearly every day</label>
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn" aria-label="Calculate Depression Score">Calculate</button>
+      </form>
+      <div id="result-info" role="region" aria-live="polite" aria-atomic="true" style="min-height:80px; margin-top: 2rem;"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
